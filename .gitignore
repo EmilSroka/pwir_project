@@ -1,0 +1,9 @@
+.idea
+.idea/*
+_rel
+_rel/*
+deps
+deps/*
+ebin
+ebin/*
+*.beam
