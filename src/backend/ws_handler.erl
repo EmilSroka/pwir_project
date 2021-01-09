@@ -23,7 +23,7 @@ websocket_handle(_, State) ->
 websocket_info({update, ListOfTrafficLights, ListOfCars}, State) ->
     LightsString = handle_format(ListOfTrafficLights),
     CarsString = handle_format(ListOfCars),
-    {[{text, "{ lights: " ++ LightsString ++ ", cars: " ++ CarsString ++ " }"}], State};
+    {[{text, "{ \"lights\": "  ++ LightsString ++ ", \"cars\": " ++ CarsString ++ " }"}], State};
 websocket_info(_, State) ->
     {ok, State}.
 
